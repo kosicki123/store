@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo4-di-dtA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo4-di-dtA">
                                 <rect key="frame" x="281" y="341" width="38" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Login"/>
@@ -24,13 +24,16 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4v-5i-15A"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="211-0N-0Ic">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="211-0N-0Ic">
                                 <rect key="frame" x="252" y="99" width="97" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="hxt-PP-dQT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-ip-fbM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-ip-fbM">
                                 <rect key="frame" x="252" y="137" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -39,6 +42,15 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x0i-ip-fbM" firstAttribute="leading" secondItem="211-0N-0Ic" secondAttribute="leading" id="8vt-bJ-Laz"/>
+                            <constraint firstItem="Wo4-di-dtA" firstAttribute="centerX" secondItem="x0i-ip-fbM" secondAttribute="centerX" id="Aae-FO-de0"/>
+                            <constraint firstItem="Wo4-di-dtA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QFg-Gz-Q7J"/>
+                            <constraint firstItem="x0i-ip-fbM" firstAttribute="top" secondItem="211-0N-0Ic" secondAttribute="bottom" constant="8" symbolic="YES" id="Qcu-4O-IwX"/>
+                            <constraint firstItem="x0i-ip-fbM" firstAttribute="trailing" secondItem="211-0N-0Ic" secondAttribute="trailing" id="ZIf-09-Gi1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wo4-di-dtA" secondAttribute="bottom" constant="229" id="cLE-2R-T0D"/>
+                            <constraint firstItem="211-0N-0Ic" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="dV1-Oj-Xqa"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="211-0N-0Ic" id="Qzd-G5-4sl"/>

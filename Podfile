@@ -6,6 +6,7 @@ use_frameworks!
 target 'store' do
 
 pod 'RealmSwift'
+pod 'Alamofire'
 
 end
 

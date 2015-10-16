@@ -9,11 +9,11 @@
 import Foundation
 
 extension String {
-    func validateLenght() -> Bool {
-        if self.characters.count == 0 {
-            return false
-        }
-        
-        return true
-    }
+//    func validateLenght() -> Bool {
+//        if self.characters.count == 0 {
+//            return false
+//        }
+//        
+//        return true
+//    }
 }
