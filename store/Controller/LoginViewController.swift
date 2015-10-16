@@ -33,7 +33,9 @@ class LoginViewController: UIViewController {
             return;
         }
         
-        LoginStore.loginWithUsername(emailTextField.text!, password: passwordTextField.text!)
+        let credential = Credential(username: emailTextField.text!, password: passwordTextField.text!)
+        
+        LoginStore.loginWithCredential(credential)
     }
     
     //MARK: - Validation -

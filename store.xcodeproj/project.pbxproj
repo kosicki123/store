@@ -22,6 +22,7 @@
 		274D246A1BD03E1B00B12150 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D24691BD03E1B00B12150 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		274D246C1BD03E4B00B12150 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D246B1BD03E4B00B12150 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		274D246F1BD040F700B12150 /* StringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D246E1BD040F700B12150 /* StringValidator.swift */; settings = {ASSET_TAGS = (); }; };
+		277C64281BD1313E005570B7 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C64271BD1313E005570B7 /* Credential.swift */; settings = {ASSET_TAGS = (); }; };
 		32610DAEEAF8AE49D657E865 /* Pods_store.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105F8F12756FD0AEED100D0F /* Pods_store.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		274D24691BD03E1B00B12150 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		274D246B1BD03E4B00B12150 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		274D246E1BD040F700B12150 /* StringValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringValidator.swift; sourceTree = "<group>"; };
+		277C64271BD1313E005570B7 /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		693BC75CA5B0A62E55F5E5C5 /* Pods-store.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-store.debug.xcconfig"; path = "Pods/Target Support Files/Pods-store/Pods-store.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				274D246B1BD03E4B00B12150 /* User.swift */,
+				277C64271BD1313E005570B7 /* Credential.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				274D246A1BD03E1B00B12150 /* LoginViewController.swift in Sources */,
 				274D246F1BD040F700B12150 /* StringValidator.swift in Sources */,
 				160803B61BD0877B0034B555 /* Router.swift in Sources */,
+				277C64281BD1313E005570B7 /* Credential.swift in Sources */,
 				274D24391BD036F500B12150 /* AppDelegate.swift in Sources */,
 				160803C21BD08DD50034B555 /* ResponseObjectSerializable.swift in Sources */,
 				274D246C1BD03E4B00B12150 /* User.swift in Sources */,

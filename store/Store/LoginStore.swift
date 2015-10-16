@@ -22,8 +22,8 @@ class LoginStore: NSObject {
 //        }
 //    }
     
-    static func loginWithUsername(username: String, password: String) {
-        request(LoginRouter.Login(username: username, password: password)).responseObject { (response: Response<User, NSError>) -> Void in
+    static func loginWithCredential(credential: Credential) {
+        request(LoginRouter.Login(credential: credential)).responseObject { (response: Response<User, NSError>) -> Void in
             
         }
     }

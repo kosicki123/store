@@ -10,17 +10,15 @@ import Foundation
 import Alamofire
 
 enum LoginRouter: URLRequestConvertible {
+    case Login(credential: Credential)
     
-    //Possibility to add more routes
-    case Login(username: String, password: String)
-    
-    // MARK: URLRequestConvertible
+    //MARK: URLRequestConvertible
     
     var URLRequest: NSMutableURLRequest {
         let (method, route, parameters): (Alamofire.Method, String, [String: AnyObject]?) = {
             switch self {
-            case .Login(let username, let password):
-                return (.GET, Constants.AuthorizationPath.rawValue, ["username": username, "password": password])
+            case .Login(let credential):
+                return (.POST, Constants.AuthorizationPath.rawValue, credential.encodeJSON)
             }
             }()
         
